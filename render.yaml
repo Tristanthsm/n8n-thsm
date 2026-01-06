@@ -5,7 +5,7 @@ services:
     image:
       url: n8nio/n8n:latest
     plan: free
-    region: frankfurt
+    region: oregon # Align with the database region (Oregon) to allow internal connection
     envVars:
       - key: N8N_HOST
         sync: false
@@ -45,3 +45,4 @@ services:
 databases:
   - name: n8n-db
     plan: free
+    region: oregon # Ensure database is explicitly in Oregon
